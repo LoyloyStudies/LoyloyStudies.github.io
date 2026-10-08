@@ -154,3 +154,23 @@ footer p { margin: 0; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* APPLICATION LETTER */
+.doc {
+  display: inline-flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.4rem; border-radius: 14px;
+  background: var(--mist); border: 1px solid var(--line);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.doc:hover { border-color: var(--leaf); background: #E3EADB; }
+.doc-icon {
+  display: grid; place-items: center;
+  width: 3rem; height: 3.75rem; border-radius: 6px;
+  background: var(--forest); color: var(--paper);
+  font-weight: 600; font-size: 0.85rem;
+}
+.doc-text { display: grid; line-height: 1.35; }
+.doc-text strong { font-family: var(--serif); font-weight: 400; font-size: 1.15rem; color: var(--forest); }
+.doc-text span { color: var(--muted); font-size: 0.92rem; }
+@media (prefers-reduced-motion: reduce) { .doc { transition: none; } }
